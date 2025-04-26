@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment"
+    tools:layout_editor_absoluteX="-2dp"
+    tools:layout_editor_absoluteY="0dp">
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="419dp"
+        android:layout_height="275dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/codCapoRead"
+        android:layout_width="235dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="95dp"
+        android:gravity="center"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="25dp"
+        app:layout_constraintStart_toEndOf="@+id/codCapoHome"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/Bcs1"
+        android:layout_width="70dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toEndOf="@+id/BcsHome"
+        app:layout_constraintTop_toBottomOf="@+id/codCapoRead">
+
+        <RadioButton
+            android:id="@+id/radioButtonBcs1"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="1" />
+
+        <RadioButton
+            android:id="@+id/radioButtonBcs2"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="2" />
+
+        <RadioButton
+            android:id="@+id/radioButtonBcs3"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="3" />
+
+        <RadioButton
+            android:id="@+id/radioButtonBcs4"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="4" />
+
+        <RadioButton
+            android:id="@+id/radioButtonBcs5"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="5" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/codCapoHome"
+        android:layout_width="46dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="95dp"
+        android:autoText="false"
+        android:gravity="center"
+        android:text="N°"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/saveData"
+        android:layout_width="125dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="143dp"
+        android:layout_marginBottom="16dp"
+        android:text="Salva"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/BcsHome"
+        android:layout_width="85dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="52dp"
+        android:gravity="center"
+        android:text="BCS"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/codCapoHome" />
+
+    <ImageButton
+        android:id="@+id/clear"
+        android:layout_width="34dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="95dp"
+        android:src="@android:drawable/btn_dialog"
+        app:layout_constraintStart_toEndOf="@+id/codCapoRead"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/Bcs2"
+        android:layout_width="97dp"
+        android:layout_height="146dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toEndOf="@+id/BcsHome"
+        app:layout_constraintTop_toBottomOf="@+id/codCapoRead">
+
+        <RadioButton
+            android:id="@+id/radioButtonBcs0"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:text="0" />
+
+        <RadioButton
+            android:id="@+id/radioButtonBcs0.25"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:text="0.25" />
+
+        <RadioButton
+            android:id="@+id/radioButtonBcs0.5"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:text="0.50" />
+
+        <RadioButton
+            android:id="@+id/radioButtonBcs0.75"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:text="0.75" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginBottom="29dp"
+        android:text="Capi letti"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/listView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/comment1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginBottom="95dp"
+        android:text="Commento"
+        app:layout_constraintBottom_toTopOf="@+id/listView"
+        app:layout_constraintStart_toEndOf="@+id/saveData" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/connected_to_reader"
+        android:orderInCategory="100"
+        android:title="Collega lettore"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/save_txt_file"
+        android:orderInCategory="100"
+        android:title="Scarica file"
+        app:showAsAction="never" />
+</menu>
